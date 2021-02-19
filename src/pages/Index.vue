@@ -1,7 +1,8 @@
 <template>
   <q-page class="bg-green-9" >
+    <q-img height="100vh"  src="https://images.unsplash.com/photo-1496159425994-72ac5deae566?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80">
     <div class="row hero">
-      <div class="col-6 q-pa-xl text-white">
+      <div class="col-xs-12 col-sm-6 q-pa-xl text-white">
         <div class="text-h1">
           Weed Classification
         </div>
@@ -13,21 +14,18 @@
         </div>
         <!-- <q-img id="weedPlant" src="/images/pngwing.com (2).png" height="100px" width="100px"></q-img> -->
       </div>
-      <div class="col-6  heroAnimationBox">
+      <div class="col-xs-12 col-sm-6 heroAnimationBox">
         <lottie-player id="animation" src="https://assets7.lottiefiles.com/packages/lf20_rg8y5nzn.json"  background="transparent"  speed="1"  :style="[animationStyle.desktop,lottieAnimation1]"  loop  autoplay></lottie-player>
       </div>
       <div class="addFileButton">
         <!-- <q-btn flat class="self-center">Select Image</q-btn> -->
-        <q-img id="weedPlant" src="/images/pngwing.com (2).png" height="100px" width="100px"></q-img>
+        <q-img id="weedPlant" src="/images/d.png" height="100px" width="100px"></q-img>
 
       </div>
-     <!--  <div id="smoke" type="flex" class="row">
-
-        <div v-for="i in 9" :key="i" class="col">
-          <lottie-player  src="https://assets10.lottiefiles.com/packages/lf20_sXcjxz.json"  background="transparent"  speed="1"  :style="animationStyle.mobile"  loop  autoplay></lottie-player>
-        </div>
-      </div> -->
     </div>
+    </q-img>
+
+    <q-img src="https://images.unsplash.com/photo-1536819114556-1e10f967fb61?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80" height="100vh">
     <div class="fileUpload flex flex-center column">
       <q-uploader
       label="Image Upload"
@@ -41,6 +39,8 @@
       {{errorMessage}}
     </q-banner>
     </div>
+    </q-img>
+
   </q-page>
 </template>
 
@@ -129,7 +129,6 @@ export default {
      }
      @keyframes turnAround {
        0%{
-         
          transform:scale(1.3) rotateY(0deg)
        }
        100%{
@@ -146,5 +145,6 @@ export default {
 }
 .fileUpload{
   height:100vh;
+  width:100vw;
 }
 </style>
